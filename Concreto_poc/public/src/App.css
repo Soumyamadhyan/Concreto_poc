@@ -1,0 +1,82 @@
+/* General Layout */
+.app-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0f172a; /* Deep Slate Blue */
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+/* Modern Top Navigation */
+.top-nav {
+  padding: 12px 24px;
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.nav-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #f8fafc;
+  letter-spacing: -0.025em;
+}
+
+/* Gradient Action Button */
+.export-button {
+  padding: 8px 18px;
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.export-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.4);
+}
+
+/* Canvas Area */
+.canvas-container {
+  flex-grow: 1;
+  background-color: #0f172a;
+}
+
+/* React Flow Specific Overrides */
+.react-flow__background {
+  background-color: #0f172a !important;
+}
+
+.react-flow__controls {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.react-flow__controls-button {
+  background: #1e293b;
+  fill: #f8fafc;
+  border-bottom: 1px solid #334155;
+}
+
+.react-flow__controls-button:hover {
+  background: #334155;
+}
+
+/* Edge/Line Styling */
+.react-flow__edge-path {
+  stroke: #6366f1 !important;
+  stroke-width: 2.5;
+}
